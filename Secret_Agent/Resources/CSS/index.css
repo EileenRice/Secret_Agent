@@ -1,0 +1,273 @@
+html, body {
+  font-size: 18px;
+  font-family: Helvetica;
+  background-color: white;
+  display: block;
+}
+
+/* -- Company Header -- */
+
+header .company {
+  background-color: #000000; /*-- black --*/
+  color: white;
+}
+
+.company img {
+  height: 1.5rem;
+  padding-right: 15px;
+}
+
+.company .comtainer span {
+  font-size: 1rem:
+}
+
+/*-- Main Banner/Section -- */
+
+.main-banner {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 0.5em;
+}
+
+.headline {
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+}
+
+.headline h1 {
+  font-size: 2em;
+  margin: 0.25em 0;
+}
+
+.headline h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.headline h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
+  margin-left: 3rem;
+  line-height: 1em;
+}
+
+
+/*-- Navigation Bar -- */
+
+nav {
+  background-color: #b22222; /*-- firebrick -- */
+  color: #ffffff; /*-- white -- */
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em 0;
+}
+
+.mobile-nav-container {
+  display: none;
+}
+
+/*-- Merchandise -- */
+
+.product-image {
+  display: flex;
+  border: 4px solid black;
+  padding: 2em 0;
+  height: 9em;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 8em;
+}
+
+.description {
+  display: block;
+  background-color: #000000; /* black */
+  color: #ffffff; /* white */
+  text-align: center;
+  padding: 0.5em;
+
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0px 0px;
+
+}
+
+.product {
+  width: 30%;
+}
+
+/*-- Business Info -- */
+
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0px 0px;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.info .title {
+  display: block;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1em 2em;
+}
+
+.info {
+  width: 35%;
+}
+
+/*-- Footer --*/
+footer {
+  display: flex;
+  color: #ffffff;
+  background-color: #000000;
+  height: 5rem;
+  text-align: left;
+  padding: 5em 0;
+  margin-top: 4em;
+}
+
+/* -- Media Only --*/
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  .product-pen, .product-watch {
+    width: 47%;
+  }
+
+  .product-glasses {
+    display: none;
+  }
+
+  .info .title {
+    width: 35%;
+  }
+
+  nav ul {
+    display: none;
+}
+
+  .mobile-nav-container {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  body, h1, h4 {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  .company img {
+    margin: auto;
+  }
+
+  .company .container span {
+    display: none;
+    }
+
+  .main-banner {
+      height: 15rem;
+    }
+
+  .main-banner .container {
+    height: 10rem;
+  }
+
+
+  .headline {
+    padding: 1rem 0;
+    width: auto;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
+
+  .headline h4 {
+    font-size: 0.77rem;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
+
+  .mobile-nav-container {
+    display: block;
+    text-align: center;
+  }
+
+  .products, .business-info .info {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .product-pen, .business-info {
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  .product-glasses {
+    display: none;
+  }
+
+  .product-watch {
+    display: none;
+  }
+
+  .business-info {
+    flex-direction: column;
+  }
+
+  .info .title {
+    width: 90%;
+    margin: 0.5em auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
